@@ -1,0 +1,57 @@
+{
+  "section": "Time & Date",
+  "tidyList": [
+    {
+    "title": " Calculate the number of difference days between two dates",
+    "codebox": "from datetime import date\nf_date = date(1996, 1, 27)\nl_date = date(2020, 8, 5)\ndelta = l_date - f_date\nprint(delta.days)\n#output:8957\n"
+  },
+  {
+    "title": " Calculate the number of difference months between two dates",
+    "codebox": "from datetime import datetime\nfrom dateutil import relativedelta\na = datetime(1985,1,1)\nb = datetime(2000,1,28)\ndelta = relativedelta.relativedelta(b,a)\nfull_months = delta.years * 12 + delta.months\nprint(full_months)\n#output:180\n\n"
+  },
+  {
+    "title": "Extract year month day hour minute second and millisecond",
+    "codebox": "#53 Extract year month day hour minute second and millisecond\nfrom datetime import datetime\ntimestamp = 1545730073\ndt_object = datetime.fromtimestamp(timestamp)\nprint(\"type(dt_object) =\", type(dt_object))\n"
+  },
+  {
+    "title": "Convert seconds to hh mm ss format",
+    "codebox": "import datetime\nn = 12345\ntime = str(datetime.timedelta(seconds = n))\nprint(time)\n#output:3:25:45\n\n"
+  },
+  {
+    "title": " Get the current GMT",
+    "codebox": "import datetime\ncurrent_time = datetime.datetime.now()\nprint (\"The GMT is : \", end = \"\")\nprint (current_time)\n"
+  },
+  {
+    "title": " Get the month name of a date",
+    "codebox": "\nimport calendar\nimport datetime\na = '2010-08-31'\ndatee = datetime.datetime.strptime(a, \"%Y-%m-%d\")\nmonth_num = (datee.month)\nmonth_abre = datetime.date(2015, month_num, 1).strftime('%b')\nmonth_name = datetime.date(2015, month_num, 1).strftime('%B')\nprint(\"Short Name:\", month_abre)\nprint(\"Full  Name:\", month_name)\n\n"
+  },
+  {
+    "title": "#58 Get the number of days in given month",
+    "codebox": "from calendar import monthrange\nnum_days = monthrange(2016, 2)[1]\nprint(num_days)\n# output: 29\n\n"
+  },
+  {
+    "title": "import datetime",
+    "codebox": "import datetime\ntomorrow = today + datetime.timedelta(days = 1)\nprint('Tomorrow : ',tomorrow)\n#output:Tomorrow :  2020-08-07\n\n"
+  },
+  {
+    "title": "#60 Get the yesterday date",
+    "codebox": "import datetime\nyesterday = today - datetime.timedelta(days = 1)\nprint('Yesterday : ',yesterday)\n#output:Yesterday :  2020-08-05\n\n"
+  },
+  {
+    "title": "#61 Get the today date",
+    "codebox": "import datetime\ntoday = datetime.date.today()\nprint('Today : ',today)\n#output:Today :  2020-08-06\n\n"
+  },
+  {
+    "title": "#62 Sort list of dates given as strings",
+    "codebox": "dates = [\"23 Jun 2018\", \"2 Dec 2017\", \"11 Jun 2018\",\n        \"01 Jan 2019\", \"10 Jul 2016\", \"01 Jan 2007\"]\nfrom datetime import datetime\nfor i in range(len(dates)):\n\tprint(dates[i])\n\tdates.sort(key = lambda date: datetime.strptime(date, '%d %b %Y'))\n# output: [23 Jun 2018, 10 Jul 2016, 2 Dec 2017, 11 Jun 2018, 23 Jun 2018, 01 Jan 2019]\n\n"
+  },
+  {
+    "title": "check if year is a leap year or not",
+    "codebox": "year = 2000\nif (year % 4) == 0:\n   if (year % 100) == 0:\n       if (year % 400) == 0:\n           print(\"{0} is a leap year\".format(year))\n       else:\n           print(\"{0} is not a leap year\".format(year))\n   else:\n       print(\"{0} is a leap year\".format(year))\nelse:\n   print(\"{0} is not a leap year\".format(year))\n\n"
+  },
+  {
+    "title": "Validate a gregorian date",
+    "codebox": "import datetime\nm = 13\nd = 24\ny = 1996\ntest = True\ntry:\n    m, d, y = map(int, (m, d, y))\n    datetime.date(y, m, d)\n    test = True\nexcept ValueError:\n    test = False\nprint (test)\n\n"
+  }
+]
+}

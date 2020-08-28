@@ -1,0 +1,25 @@
+{
+  "section": "Array",
+  "tidyList": [
+  {
+    "title": "Check if an array is empty",
+    "codebox": "test = []\nif n(test):\n    print(\"Not Empty\")\nelse:\n    print(\"Empty\")\n#output: Empty\n\n"
+  },
+  {
+    "title": "Clone an array",
+    "codebox": "new_list = old_list.copy()\n"
+  },
+  {
+    "title": "Compare two arrays regardless of order",
+    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif set(x) == set(y):\n    print(\"true\")\n#output: true\n"
+  },
+  {
+    "title": "Compare two arrays",
+    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif x == y:\n    print(\"true\")\n#output: true\n"
+  },
+  {
+    "title": " Check if an array contains a value matching some criterias",
+    "codebox": "lst = ['test', 'example', 'world', 'time', ]\nchk = False\nfor item in lst:\n    if item == \"time\" or item == \"world\":\n        chk = True\n        break;\nif (chk == True): print(\"it matches\")\nelse: print(\"Not matching\")\n#output it matches\n\n"
+  }
+]
+}

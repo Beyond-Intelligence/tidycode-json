@@ -1,0 +1,88 @@
+{
+  "section": "String",
+  "tidyList": [
+  {
+    "title": "Capitalize a string",
+    "codebox": "name = \"test\"\nname.capitalize()"
+  },
+  {
+    "title": "Check if a string is a palindrome",
+    "codebox": "string = \"Tenet\"\nreverse_string = \"\"\nfor i in string:\n    reverse_string = i + reverse_string\n    if (string==reverse_string):\n        print(\"YES\")"
+  },
+  {
+    "title": "Validating an Email",
+    "codebox": "import re\nregex_email = '^[a-z0-9]+[._]?[a-z0-9]+[@]w+[.]w{2,3}$'\nif(re.search(regex_email,\"test@exaple.com\")):\n       print(\"Valid Email\")\n\nelse:\n       print(\"Invalid Email\")"
+  },
+  {
+    "title": "Validating an URL",
+    "codebox": "import re\nregex_URL = '^(http(s)?)://[^s$.?#].[^s]*$'\nif(re.search(regex_URL,\"https://example.com/test\")):\n       print(\"Valid URL\")\n\nelse:\n       print(\"Invalid URL\")"
+  },
+  {
+    "title": "Convert a windows file path to unix path",
+    "codebox": "string = \"C:ExampleTest\"\n\nprint(string.replace(\"\\\", \"/\"))"
+  },
+  {
+    "title": "Check if a url is absolute",
+    "codebox": "import re\nregex_URL = '^(http(s)?)://[^s$.?#].[^s]*$'\nif(re.search(regex_URL,\"https://example.com/test\")):\n       print(\"absolute URL\")\n\nelse:\n       print(\"not absolute URL\")"
+  },
+  {
+    "title": "Check if a url is relative",
+    "codebox": "import re\nregex_URL = '/[^s$.?#].[^s]*$'\nif(re.search(regex_URL,\"https://example.com/test\")):\n       print(\"relative  URL\")\n\nelse:\n       print(\"not relative  URL\")"
+  },
+  {
+    "title": "Convert string to snake case",
+    "codebox": "import re\nsnake = 'python example'\ncamel= ''.join(n+\"_\" for n in snake.split(' '))\ncamel = camel[0].lower() + camel[1:]\nprint(camel)\n\n#11 Convert camel or pascal case to snake case\n\ncamel = \"thisIsAExample\"\nsnake= ''.join(['_'+i.lower()\n                if i.isupper()\n               else i for i in camel]).lstrip('_')\nprint(snake)"
+  },
+  {
+    "title": "Convert snake case to pascal case",
+    "codebox": "import re\nsnake = 'python_example'\ncamel= ''.join(x.capitalize()  for x in snake.split('_'))\nprint(camel)"
+  },
+  {
+    "title": "Convert snake case to camel case",
+    "codebox": "import re\nsnake = 'python_example'\nsnake = input()\ncamel= ''.join(n.capitalize() for n in snake.split('_'))\ncamel = camel[0].lower() + camel[1:]\nprint(camel)"
+  },
+  {
+    "title": "Convert string to camel case",
+    "codebox": "import re\nsnake = 'python_example'\nsnake = input()\ncamel= ''.join(n.capitalize() for n in snake.split(' '))\ncamel = camel[0].lower() + camel[1:]\nprint(camel)"
+  },
+  {
+    "title": "Convert string  to pascal case",
+    "codebox": "import re\nsnake = 'python_example'\ncamel= ''.join(n.capitalize() for n in snake.split('_'))\nprint(camel)"
+  },
+  {
+    "title": "Convert string  to URL slug",
+    "codebox": "import re\nstring = 'Chapter One: Once upon a time'\nurl_slug= '-'.join(re.split('; |, |*|\n|: | |[.] ',string))\nurl_slug.replace(\".\",\"\")\nprint(url_slug)"
+  },
+  {
+    "title": "Remove specific characters of a string",
+    "codebox": "#using replace\ns = 'test'\nprint(s.replace('t', ''))\n# output = es\n#using translate\ns = 'example'\nprint(s.translate({ord('e'): None}))\n# output = xampl"
+  },
+  {
+    "title": "Removing Spaces from a String",
+    "codebox": "s = ' t e s t '\n#using replace\nprint(s.replace(' ', ''))\n#using translate\nprint(s.translate({ord(i): None for i in ' '}))"
+  },
+  {
+    "title": "Remove substring from string",
+    "codebox": "s = 'ab12abc34ba'\nprint(s.replace('ab', ''))"
+  },
+  {
+    "title": "Removing Spaces from a String",
+    "codebox": "  s = ' t e s t '\n#using replace\nprint(s.replace(' ', ''))\n#using translate\nprint(s.translate({ord(i): None for i in ' '}))"
+  },
+  {
+    "title": "Remove substring from string",
+    "codebox": "s = 'ab12abc34ba'\nprint(s.replace('ab', ''))\n# output: 12c34ba\n"
+  },
+  
+    
+  {
+    "title": "Swap the rows and columns of a matrix (Transpose two-dimensional array)",
+    "codebox": "import numpy as np\na_2d = np.arange(6).reshape(2, 3)\nprint(a_2d)\na_2d_T = a_2d.T\nprint(a_2d_T)\n"
+  },
+
+  {
+    "title": "Reverse a string",
+    "codebox": "txt = \"Hello World\"[::-1]\nprint(txt)\n\n"
+  }
+]
+}
