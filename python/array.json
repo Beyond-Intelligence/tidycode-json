@@ -3,7 +3,7 @@
   "tidyList": [
   {
     "title": "Check if an array is empty",
-    "codebox": "test = []\nif n(test):\n    print(\"Not Empty\")\nelse:\n    print(\"Empty\")\n#output: Empty\n\n"
+    "codebox": "test = []\nif n(test):\n    print(\"Not Empty\")\nelse:\n    print(\"Empty\")\n#output: Empty"
   },
   {
     "title": "Clone an array",
@@ -11,15 +11,19 @@
   },
   {
     "title": "Compare two arrays regardless of order",
-    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif set(x) == set(y):\n    print(\"true\")\n#output: true\n"
+    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif set(x) == set(y):\n    print(\"true\")\n#output: true"
   },
   {
     "title": "Compare two arrays",
-    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif x == y:\n    print(\"true\")\n#output: true\n"
+    "codebox": "x = [2,4,5,7,1]\ny = [1,2,4,5,7]\nif x == y:\n    print(\"true\")\n#output: true"
   },
   {
-    "title": " Check if an array contains a value matching some criterias",
-    "codebox": "lst = ['test', 'example', 'world', 'time', ]\nchk = False\nfor item in lst:\n    if item == \"time\" or item == \"world\":\n        chk = True\n        break;\nif (chk == True): print(\"it matches\")\nelse: print(\"Not matching\")\n#output it matches\n\n"
+    "title": "Swap the rows and columns of a matrix (Transpose two-dimensional array)",
+    "codebox": "import numpy as np\na_2d = np.arange(6).reshape(2, 3)\nprint(a_2d)\na_2d_T = a_2d.T\nprint(a_2d_T)"
+  },
+  {
+    "title": "Check if an array contains a value matching some criterias",
+    "codebox": "lst = ['test', 'example', 'world', 'time', ]\nchk = False\nfor item in lst:\n    if item == \"time\" or item == \"world\":\n        chk = True\n        break;\nif (chk == True): print(\"it matches\")\nelse: print(\"Not matching\")\n#output it matches"
   }
 ]
 }

@@ -73,13 +73,6 @@
     "title": "Remove substring from string",
     "codebox": "s = 'ab12abc34ba'\nprint(s.replace('ab', ''))\n# output: 12c34ba\n"
   },
-  
-    
-  {
-    "title": "Swap the rows and columns of a matrix (Transpose two-dimensional array)",
-    "codebox": "import numpy as np\na_2d = np.arange(6).reshape(2, 3)\nprint(a_2d)\na_2d_T = a_2d.T\nprint(a_2d_T)\n"
-  },
-
   {
     "title": "Reverse a string",
     "codebox": "txt = \"Hello World\"[::-1]\nprint(txt)\n\n"

@@ -2,20 +2,20 @@
   "section": "Files",
   "tidyList": [
   {
-    "title": "# 63 Generate a random floating point number",
-    "codebox": "import random\nx = random.random()\nprint(\"Random float number is \", x)\nprint(\"Random float number is \", random.random())\n\n"
+    "title": "Generate a random floating point number",
+    "codebox": "import random\nx = random.random()\nprint(\"Random float number is \", x)\nprint(\"Random float number is \", random.random())"
   },
   {
-    "title": "#64 Generate a random hex color",
-    "codebox": "import random\nrgb = \"\"\nfor _ in \"RGB\":\n    i = random.randrange(0, 2**8)\n    rgb += i.to_bytes(1, \"big\").hex()\nprint(rgb)\n\n"
+    "title": "Generate a random hex color",
+    "codebox": "import random\nrgb = \"\"\nfor _ in \"RGB\":\n    i = random.randrange(0, 2**8)\n    rgb += i.to_bytes(1, \"big\").hex()\nprint(rgb)"
   },
   {
-    "title": " Generate a random integers in given range",
-    "codebox": "import random\nnum = 10\nstart = 20\nend = 40\nres = []\nfor j in range(num):\n\tres.append(random.randint(start, end))\nprint(res)\n\n"
+    "title": "Generate a random integers in given range",
+    "codebox": "import random\nnum = 10\nstart = 20\nend = 40\nres = []\nfor j in range(num):\n\tres.append(random.randint(start, end))\nprint(res)"
   },
   {
     "title": "Generate a random string from given characters",
-    "codebox": "import string\nimport random\nchars=\"test\"\nsize=4\nprint(''.join(random.choice(chars) for x in range(size)))\n\n"
+    "codebox": "import string\nimport random\nchars=\"test\"\nsize=4\nprint(''.join(random.choice(chars) for x in range(size)))"
   }
 ]
 }

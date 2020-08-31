@@ -2,20 +2,20 @@
   "section": "Files",
   "tidyList": [
   {
-    "title": "open a file",
-    "codebox": "text_file = open('/home/example/file.txt','r')\n# ‘r’ : the file is opened in readonly mode\n# ‘w’ : the file will be opened  write only mode. If file containing containing that name does not exists, it will create a new one\n# ‘a’ : the output of that program will be append to the previous output of that file\n# ‘r+’ : the file will be open for both reading and writing\n"
+    "title": "Open a file",
+    "codebox": "text_file = open('/home/example/file.txt','r')\n# ‘r’ : the file is opened in readonly mode\n# ‘w’ : the file will be opened  write only mode. If file containing containing that name does not exists, it will create a new one\n# ‘a’ : the output of that program will be append to the previous output of that file\n# ‘r+’ : the file will be open for both reading and writing"
   },
   {
     "title": "Python Delete File",
-    "codebox": "import shutil\nimport os\n\n#method1\nshutil.os.remove('/home/example/file.txt')\n#method2\nos.remove('/home/example/file.txt')\n"
+    "codebox": "import shutil\nimport os\n\n#method1\nshutil.os.remove('/home/example/file.txt')\n#method2\nos.remove('/home/example/file.txt')"
   },
   {
     "title": "Python Copy File",
-    "codebox": "import shutil\n#method1\nshutil.copy2('home/from/file.txt', 'home/to/file.txt')\n#method2\nshutil.copyfile('home/from/file.txt', 'home/to/file.txt')\n"
+    "codebox": "import shutil\n#method1\nshutil.copy2('home/from/file.txt', 'home/to/file.txt')\n#method2\nshutil.copyfile('home/from/file.txt', 'home/to/file.txt')"
   },
   {
     "title": "Python Read/write File",
-    "codebox": "#open the file\ntext_file = open('/home/example/file.txt','r')\nline_list = text_file.readlines();\nfor line in line_list:\n    print(line)\n\ntext_file.close()\n"
+    "codebox": "#open the file\ntext_file = open('/home/example/file.txt','r')\nline_list = text_file.readlines();\nfor line in line_list:\n    print(line)\n\ntext_file.close()"
   }
 ]
 }
